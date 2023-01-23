@@ -2,14 +2,47 @@
 <html lang="es">
     <head>
         <meta charset="UTF-8">
-        <title>Cursos Alura</title>
+        <meta name="viewport" content="width=device-width">
+        <title> Codex Alura</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     </head>
+
     <body>
-        <ul>
-            <li>Vagrant</li>
-            <li>Docker</li>
-            <li>Ansible</li>
-            <li>Integración Continua: Madurez y Productividad</li>
-        </ul>
+        <header>
+            <img class="logo" src="imagenes/logo.png" alt="logo de Alura" >
+        </header>
+
+        <main>
+            <section>
+                <textarea class="textarea" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+                
+                <div>
+                    <h6 class="informacion">❗Solo letras minúsculas y sin acentos.</h6>
+                </div>
+
+                <div class="botones">
+                    <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                    <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+                </div>      
+            </section>
+
+            <section>
+                <textarea class="mensaje" cols="20" rows="10" placeholder="Ningún mensaje fue encontrado"></textarea>
+               
+                <div>
+                    <button class="copiar" onclick="copiar()">Copiar</button>
+                </div>
+            </section>
+        </main>
+        <script src="script.js"></script>
     </body>
+    <footer>
+        <h1>David Alonso Vargas Melgarejo</h1>
+        <p class="footer">Challenge one codificador 4to grupo.</p>
+        <p class="footer">2022-2023</p>
+    </footer>
 </html>
